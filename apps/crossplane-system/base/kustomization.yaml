@@ -9,4 +9,5 @@ helmCharts:
     valuesFile: values.yaml
       
 resources:
+  - https://github.com/crossplane/crossplane/cluster/kustomization.yaml/?ref=v1.11.0
   - provider-aws.yaml
