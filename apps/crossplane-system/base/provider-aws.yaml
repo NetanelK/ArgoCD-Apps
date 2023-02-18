@@ -4,7 +4,7 @@ metadata:
   name: provider-aws
   annotations:
     # argocd.argoproj.io/sync-wave: "150"
-    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    # argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   package: "xpkg.upbound.io/crossplane-contrib/provider-aws:v0.33.0"
 ---
@@ -14,7 +14,7 @@ metadata:
   name: aws-provider
   annotations:
     # argocd.argoproj.io/sync-wave: "200"
-    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    # argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   credentials:
     source: Secret
