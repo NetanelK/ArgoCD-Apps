@@ -3,7 +3,7 @@
   "userGivenName": "crossplane",
   "destNamespace": "crossplane-system",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/crossplane/overlays/testing",
+  "srcPath": "apps/crossplane-system/overlays/testing",
   "srcRepoURL": "https://github.com/NetanelK/ArgoCD-Apps.git",
   "srcTargetRevision": "",
   "labels": null
