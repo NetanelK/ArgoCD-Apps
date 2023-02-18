@@ -6,9 +6,7 @@ helmCharts:
     releaseName: crossplane
     version: 1.9.1
     repo: https://charts.crossplane.io/stable
-    # valuesFile: values.yaml
-    valuesInline: 
-      customAnnotations: 
-        argocd.argoproj.io/sync-wave: "100"
+    valuesFile: values.yaml
+      
 resources:
   - provider-aws.yaml
