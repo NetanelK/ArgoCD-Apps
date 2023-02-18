@@ -1,5 +1,0 @@
-{
-  "yaml.schemas": {
-    "https://json.schemastore.org/kustomization.json": "file:///home/netanel/projects/ArgoCD-Apps/bootstrap/argo-cd/ingress.yaml"
-  }
-}
