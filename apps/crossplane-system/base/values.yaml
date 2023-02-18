@@ -1,6 +1,6 @@
-# provider:
-#   packages: 
-#     - xpkg.upbound.io/crossplane-contrib/provider-aws:v0.33.0
+provider:
+  packages: 
+    - xpkg.upbound.io/crossplane-contrib/provider-aws:v0.33.0
 
 customAnnotations: 
   argocd.argoproj.io/sync-wave: "100"
