@@ -16,6 +16,8 @@ metadata:
     argocd.argoproj.io/sync-wave: "200"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
+  assumeRole:
+    roleARN: arn:aws:iam::885649675981:role/ServiceRoleForCrossplane
   credentials:
     source: Secret
     secretRef:
