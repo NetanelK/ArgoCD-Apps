@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "150"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
-  package: "xpkg.upbound.io/crossplane-contrib/provider-aws:v0.33.0"
+  package: xpkg.upbound.io/upbound/provider-aws:v0.29.0
 ---
 apiVersion: aws.crossplane.io/v1beta1
 kind: ProviderConfig
