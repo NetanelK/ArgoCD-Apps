@@ -10,13 +10,13 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: HTTPS
 spec:
   rules:
-    - host: argocd.private
-      http:
-        paths:
-        - pathType: Prefix
-          path: "/"
-          backend:
-            service:
-              name: argocd-server
-              port: 
-                number: 80
+  - host: argocd.kadosh.lab
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: argocd-server
+            port:
+              number: 80
