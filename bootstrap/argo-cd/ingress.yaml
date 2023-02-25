@@ -10,6 +10,10 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: HTTPS
     cert-manager.io/issuer: "letsencrypt-staging"
 spec:
+  tls:
+  - hosts:
+    - argocd.kadosh.lab
+    secretName: quickstart-example-tls
   rules:
   - host: argocd.kadosh.lab
     http:
