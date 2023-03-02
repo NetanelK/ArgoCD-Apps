@@ -1,0 +1,25 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+patches:
+- patch: |-
+    - op: add
+      path: /spec/template/spec/containers/0/args
+      value:
+        - --source=service
+        - --source=ingress
+        - --registry=txt
+        - --log-format=text
+        - --interval=1m
+        - --policy=upsert-only
+        - --txt-owner-id=k8s
+        - --domain-filter=kadosh.lab
+        - --provider=rfc2136
+        - --rfc2136-host=10.100.102.238
+        - --rfc2136-port=53
+        - --rfc2136-zone=kadosh.lab
+        - --rfc2136-insecure
+        - --rfc2136-tsig-axfr
+  target:
+    kind: Deployment
